@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, input, select, button {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 1.563rem;
+	margin-top: 0px;
+	height: 100%;
+}
+
+.bg-image {
+	
+	display: block;
+	width: 120rem;
+	height: 67.5rem;
+	position: fixed;
+	background-image: url(paisagem.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: blur(8px);	
+	-webkit-filter: blur(8px);
+	margin: -2.5rem;
+	margin-top: -5rem;
+}
+h1 {
+	font-size: 3.438rem;
+	/* width:fit-content; */
+	/* color: rgb(88, 170, 252); */
+	background: -webkit-linear-gradient(left,rgb(47, 229, 232),rgb(255, 128, 0));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	border-radius: 10px 10px 0px 0px;
+	border-top: 1px solid rgb(12, 12, 12);
+	border-bottom: 1px solid rgb(40, 40, 40);
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.397);
+}
+
+label {
+	font-weight: bold;
+	font-size: 30;
+}
+
+button, input {
+	margin-bottom: 1.563rem;
+	padding: 0.938rem;
+	border: none;
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 1.563rem;
+}
+
+input {
+	border: 1px solid #000;
+	border-radius: 10px;
+	width: 9.375rem;
+	background-color:rgba(123, 216, 250, 0.356) ;
+
+}
+
+button	{
+	background-color: rgba(72, 206, 255, 0.356);
+	font-weight: bold;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+
+}
+
+button:hover {
+	background-color: rgba(0, 0, 0, 0.379);
+	color: rgba(255, 255, 255, 0.373);
+	transition: 0.5s;
+}
+
+button:active {
+	background-color: rgba(255, 128, 0, 0.371);
+	color: black;
+}
+#corpo{
+padding-bottom: 2.375rem;
+text-align: center; 
+margin: 2.5rem;
+margin-top: 3.375rem;
+background-image: linear-gradient(to bottom right, rgba(0, 78, 167, 0.838), rgba(255, 128, 0, 0.432)  );
+border-radius: 10px;
+animation: flutuar 6s ease-in-out infinite;
+}
+
+#corpo2 {
+	
+	/* padding-top: 1.375rem;
+	padding-bottom: 1.375rem; */
+	text-align: center;
+	margin: 2.5rem;
+	margin-top: 4.375rem;
+	background-image: linear-gradient(to bottom right, rgba(0, 78, 167, 0.838), rgba(255, 128, 0, 0.432));
+	border-radius: 10px;
+	animation: flutuar 6s ease-in-out infinite;
+	overflow: hidden;
+	max-height: 200px;
+	transition: max-height 1s ease-in-out;
+}
+#corpo2.esconde {
+	max-height: 0;
+	pointer-events: none;
+
+}
+
+
+@keyframes flutuar {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+		transform: translatey(0px);
+	}
+
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+		transform: translatey(-20px);
+	}
+
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+		transform: translatey(0px);
+	}
+}
+
